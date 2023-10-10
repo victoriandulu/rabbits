@@ -1,13 +1,114 @@
+
+/* Add this CSS code to your stylesheet (e.g., App.css) */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+background-color: whitesmoke;
+background-size: cover;
+background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-bottom: 250px; /* Adjust this value to create space below the footer */
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main-footer {
+  background-color: whitesmoke;
+  color: black;
+ 
+  padding: 20px 0; /* Add padding to create space above and below the footer */
+  clear: both; /* Clear any floated elements above the footer */
+  position: absolute;
+  
+
 }
+
+.row {
+  background-color: whitesmoke;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 0px;
+
+}
+.h4{
+  padding: 0;
+  margin: 0;
+}
+.smaller-footer {
+  /* font-size: 2px; /* Reduce the font size */
+  /* padding: 5px;  */ 
+  /* Reduce padding */
+}
+.col-sm{
+ font-size: 15px;  
+   padding: 10px;
+}
+.unorderlist{
+  padding: 0px;
+}
+
+
+.row2 {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px;
+  background-color: whitesmoke;
+}
+
+.container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 34vh;
+  padding: 0px;
+  background-color: whitesmoke;
+  
+}
+/* Home.css */
+
+/* Style the container of the carousel */
+.page {
+  text-align: center;
+  width: 100%;
+}
+
+/* Style the carousel itself */
+/* You can adjust the width and height to fit your design */
+/* Customize other carousel styles as needed */
+.carousel {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.image1{
+  width: 100%;
+  height: 30%;
+}
+.image2{
+  width: 100%;
+  height: 30%;
+}
+.image3{
+  width: 100%;
+  height: 30%;
+}
+
+/* Style the carousel images */
+/* You can adjust the image dimensions and add more styles */
+.carousel img {
+  max-width: 100%;
+  height: 30%;
+}
+
+/* Style the title and paragraph */
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+

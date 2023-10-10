@@ -1,25 +1,54 @@
-import logo from './logo.svg';
+
 import './App.css';
+import './index.css';
+import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
+import Home from './pages/Home';
+import About from './pages/About';
+import Pricing from './pages/Pricing';
+import Product from './pages/Products';
+import Register from './pages/Register';
+import Login from './pages/Login';
+import rabbit from './Components/rabbit.jpg';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  // Determine which component to render based on window.location.pathname
+  let Component;
+  switch (window.location.pathname) {
+    case '/':
+      Component = Home;
+      break;
+    case '/pricing':
+      Component = Pricing;
+      break;
+      case '/Products':
+        Component = Product;
+        break;
+    case '/about':
+      Component = About;
+      break;
+      case '/Register':
+      Component = Register;
+      break;
+      case '/Login':
+      Component = Login;
+      break;
+      default:
+        Component = Home;
+  }
+      
+    
+        // const renderFooter = Component === Login;
 
-export default App;
+        return (
+          <div className="App app-background">
+            <Navbar />
+            <Component />
+        
+            <Footer/>
+            {/* {renderFooter && <Footer />} */}
+          </div>
+        );
+      }
+      
+      export default App;
